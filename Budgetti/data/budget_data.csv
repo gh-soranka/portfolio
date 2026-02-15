@@ -1,0 +1,7 @@
+Typ,Betrag,Name,Beschreibung,Monthly
+Einnahme,2300.0,Lohn,Max Mustermann,True
+Einnahme,3600.0,Gehalt,Erika Musterfrau,True
+Ausgabe,700.0,Miete,,True
+Ausgabe,260.0,Kredit 1,Bankkredit,True
+Ausgabe,120.0,KFZ Steuer,Auto Audi,False
+Ausgabe,90.0,Strom,Stadtwerke,True
