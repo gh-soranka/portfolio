@@ -4,9 +4,6 @@ from settings import *
 from classes import Einnahme, Ausgabe, ToolTip
 from data import *
 
-def truncate_name(name, max_length=MAX_NAME_LENGTH):
-    return name if len(name) <= max_length else name[:max_length-1] + "…"
-
 class BudgetApp:
 
     def __init__(self, master: Tk):

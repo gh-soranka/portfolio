@@ -1,4 +1,3 @@
-import os
 from tkinter import Tk
 
 # Fenstergröße
@@ -16,6 +15,9 @@ HIGHLIGHT_FONT = ("Verdana", 16)
 TEXT_FONT = ("Verdana", 12)
 
 MAX_NAME_LENGTH = 45
+
+def truncate_name(name, max_length=MAX_NAME_LENGTH):
+    return name if len(name) <= max_length else name[:max_length-1] + "…"
 
 # Berechne zentrierte Start-Geometry
 def get_geometry(master: Tk):
