@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import Tk, Toplevel, messagebox, PhotoImage
 from settings import *
 from classes import Einnahme, Ausgabe, ToolTip
-from data import save_entries, load_entries
+from data import *
 
 def truncate_name(name, max_length=MAX_NAME_LENGTH):
     return name if len(name) <= max_length else name[:max_length-1] + "…"
@@ -32,9 +32,9 @@ class BudgetApp:
         # Daten laden
         self.einnahmen, self.ausgaben = load_entries()
 
-        self.icon_edit = tk.PhotoImage(file="budgetti/images/edit.bmp")
-        self.icon_delete = tk.PhotoImage(file="budgetti/images/delete.bmp")
-        self.icon_info = tk.PhotoImage(file="budgetti/images/info.bmp")
+        self.icon_edit = tk.PhotoImage(file=os.path.join(IMAGES_DIR, "edit.bmp"))
+        self.icon_delete = tk.PhotoImage(file=os.path.join(IMAGES_DIR, "delete.bmp"))
+        self.icon_info = tk.PhotoImage(file=os.path.join(IMAGES_DIR, "info.bmp"))
 
         # Frames
         self.menu_frame = tk.Frame(master, bg=MENU_BG_COLOR, width=250)

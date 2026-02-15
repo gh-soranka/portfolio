@@ -2,7 +2,9 @@ import os
 import csv
 from classes import Einnahme, Ausgabe
 
-DATA_FILE = os.path.join("budgetti","data", "budget_data.csv")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_FILE = os.path.join(BASE_DIR,"data", "budget_data.csv")
+IMAGES_DIR = os.path.join(BASE_DIR, "images")
 
 def save_entries(einnahmen, ausgaben):
     with open(DATA_FILE, "w", newline="", encoding="utf-8") as f:
