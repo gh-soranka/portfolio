@@ -17,9 +17,6 @@ TEXT_FONT = ("Verdana", 12)
 
 MAX_NAME_LENGTH = 45
 
-# Images
-PICON_PATH = os.path.join("budgetti", "images", "icon.png")
-
 # Berechne zentrierte Start-Geometry
 def get_geometry(master: Tk):
     screen_width = master.winfo_screenwidth()
